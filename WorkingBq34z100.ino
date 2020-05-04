@@ -11,7 +11,7 @@ void setup()
     Serial.println("BQ34Z100G1. Please check wiring. Freezing.");
     while (1);
   }
-  Serial.println("AHT20 acknowledged.");
+  Serial.println("BQ34Z100G1 acknowledged.");
 
 }
 
