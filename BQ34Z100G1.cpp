@@ -19,23 +19,15 @@ bool BQ34Z100G1::isConnected()
     return false;
 }
 int BQ34Z100G1::readSOC(){
-  int soc;
   Wire.begin();
   Wire.beginTransmission(BQ34Z100);
   Wire.write(0x02);
   Wire.endTransmission();
   Wire.requestFrom(BQ34Z100,1);
-  unsigned int low = Wire.read();
-  Wire.beginTransmission(BQ34Z100);
-  Wire.write(0x03);
-  Wire.endTransmission();
-  Wire.requestFrom(BQ34Z100,1);
-  unsigned int high = Wire.read();
-  unsigned int high1 = high<<8;
-  soc = high1 + low;
+  unsigned int low_byte = Wire.read();
+  unsigned int w = low_byte;
   Wire.end();
-  return soc;
-  
+  return w;
   }
 
 int BQ34Z100G1::readRemainingCapacity() {
