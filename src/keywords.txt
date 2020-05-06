@@ -1,0 +1,41 @@
+#######################################
+# Syntax Coloring Map For BQ34Z100G1
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+BQ34Z100G1	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+isConnected		KEYWORD2
+readSOC			KEYWORD2
+readRemainingCapacity	KEYWORD2
+readVoltage		KEYWORD2
+readAverageCurrent	KEYWORD2
+readTTE			KEYWORD2
+readTTF			KEYWORD2
+readDOD0		KEYWORD2
+readCycles		KEYWORD2
+readSOH			KEYWORD2
+readFFC			KEYWORD2
+readAveragePower	KEYWORD2
+readPassedCharge	KEYWORD2
+readMaxError		KEYWORD2
+readChipTemp		KEYWORD2
+CF_Flag			KEYWORD2
+DSG_Flag		KEYWORD2
+CHG_Flag		KEYWORD2
+FC_Flag			KEYWORD2
+BATLOW_Flag		KEYWORD2
+BATHI_Flag		KEYWORD2
+OTC_Flag		KEYWORD2
+OTD_Flag		KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
